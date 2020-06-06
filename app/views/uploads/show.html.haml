@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Image:
+  = @upload.image
+%p
+  %b Content:
+  = @upload.content
+%p
+  %b Name:
+  = @upload.name
+
+= link_to 'Edit', edit_upload_path(@upload)
+\|
+= link_to 'Back', uploads_path
